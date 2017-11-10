@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 const Title = styled.h1`
   font-size: 2.5em;
@@ -14,7 +14,7 @@ const Subtitle = styled.h2`
 `;
 
 const Wrapper = styled.section`
-  padding: 4em;
+  padding: 3em;
   background: lightgray;
   font-family: Roboto, sans-serif;
 `; 
