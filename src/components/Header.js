@@ -16,7 +16,6 @@ const Subtitle = styled.h2`
 const Wrapper = styled.section`
   padding: 3em;
   background: lightgray;
-  font-family: Roboto, sans-serif;
 `; 
 
 class Header extends Component {
