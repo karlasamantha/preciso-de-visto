@@ -16,7 +16,7 @@ const Wrapper = styled.section`
   align-items: center;
   flex-direction: column;
   padding: 3em;
-  background: lightgray;
+  background: #aeae;
 `; 
 
 class Header extends Component {
@@ -27,7 +27,7 @@ class Header extends Component {
           Preciso de visto?
         </Title>
         <Subtitle>
-          Lista dos países que exigem visto 
+          Lista dos países que exigem visto brasileiro
         </Subtitle>
       </Wrapper>
     )
