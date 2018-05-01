@@ -1,3 +1,3 @@
 # Preciso de Visto
 
-WebApp para listar países onde Brasileirxs precisam de visto
+WebApp para listar países que exigem visto brasileiro para turismo
