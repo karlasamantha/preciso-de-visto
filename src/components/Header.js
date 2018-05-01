@@ -17,7 +17,7 @@ const Wrapper = styled.section`
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  background: #aeae;
+  background: #c0ced1;
 `; 
 
 class Header extends Component {
