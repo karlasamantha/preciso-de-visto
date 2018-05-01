@@ -36,3 +36,16 @@ body, html {
 .filter-wrapper {
   margin: 25px 0;
 }
+
+.fa {
+  float: right;
+  margin-right: 20px;
+}
+
+.fa-check-circle {
+  color: #2ec916;
+}
+
+.fa-times-circle {
+  color: #c91414;
+}
