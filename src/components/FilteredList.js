@@ -9,29 +9,46 @@ const Input = styled.input`
   margin: 0.5em;
   border-radius: 3px;
   border: 1px solid lightgray;
-  width: 500px;
+  width: 40vw;
   font-size: 1em;
 `;
 
-class SearchBar extends Component {
+class FilteredList extends Component {
   constructor() {
     super();
 
     this.state = {
-      countries: COUNTRIES_DATA
+      countries: COUNTRIES_DATA,
+      filteredCountries: []
     }
+  }
+
+  componentDidMount() {
+    this.setState({ filteredCountries: this.state.countries })
+  }
+
+  filterList = (event) => {
+    let updatedList = this.state.countries;
+
+    updatedList = updatedList.filter((item) => {
+      return item.label.toLowerCase().search(event.target.value.toLowerCase()) !== -1;
+    })
+    this.setState({filteredCountries: updatedList})
   }
   
   render() {
     return (
       <div className="filter-wrapper">
         <form>
-          <Input placeholder="Digite o nome do país" type="text" />
+          <Input 
+            placeholder="Digite o nome do país" 
+            type="text" 
+            onChange={this.filterList} />
         </form>
-        <List countries={this.state.countries}/>
+        <List countries={this.state.filteredCountries}/>
       </div>
     )
   }
 }
 
-export default SearchBar;
+export default FilteredList;
