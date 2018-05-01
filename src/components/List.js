@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import 'font-awesome/css/font-awesome.min.css';
 
 const Ul = styled.ul`
   padding: 0;
@@ -16,17 +17,20 @@ const Li = styled.li`
 
 class List extends Component {
   static propTypes = {
-    countries: PropTypes.object
+    countries: PropTypes.array
   }
 
   render() {
     const { countries } = this.props;
-		console.log(countries[0]);
+
     return(
 			<Ul>
 				{countries.map((country, index) => {
 					return (
-						<Li key={index}>{country.label}</Li>
+            <Li key={index}>
+              <span>{country.label}</span>
+              <span>{ country.visa ? <i className="fa fa-check-circle" aria-hidden="true"></i> : <i class="fa fa-times-circle" aria-hidden="true"></i>}</span>
+            </Li>
 					)
 				})}
 			</Ul>
