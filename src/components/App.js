@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './Header';
-import SearchBar from './SearchBar';
-import List from './List';
+import FilteredList from './FilteredList';
 import Container from './Container';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -12,9 +12,9 @@ class App extends Component {
       <div>
         <Header />
         <Container>
-          <SearchBar />
-          <List />
+          <FilteredList />
         </Container>
+        <Footer />
       </div>
     );
   }
