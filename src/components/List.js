@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
-
+import COUNTRIES_DATA from '../../src/countries.json';
 
 class List extends Component {
-  componentDidMount() {
-    
-  }
+  constructor() {
+    super();
 
-  componentWillUnmount() {}
+    this.state = {
+      countries: COUNTRIES_DATA
+    }
+	}
 
   render() {
+    const { countries } = this.state;
+		console.log(countries[0]);
     return(
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
+			<ul>
+				{countries.map((country, index) => {
+					return (
+						<li key={index}>{country.label}</li>
+					)
+				})}
+			</ul>
     )
   }
 }
