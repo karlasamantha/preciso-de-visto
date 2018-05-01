@@ -27,7 +27,7 @@ class Header extends Component {
           Preciso de visto?
         </Title>
         <Subtitle>
-          Lista dos países que exigem visto brasileiro
+          Lista dos países que exigem visto brasileiro para turismo
         </Subtitle>
       </Wrapper>
     )
