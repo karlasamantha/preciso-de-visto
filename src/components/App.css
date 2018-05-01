@@ -31,6 +31,13 @@
 
 body, html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  width: 40vw;
 }
 
 .filter-wrapper {
@@ -48,4 +55,10 @@ body, html {
 
 .fa-times-circle {
   color: #c91414;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 90%;
+  }
 }

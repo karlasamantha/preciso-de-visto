@@ -29,7 +29,12 @@ class List extends Component {
 					return (
             <Li key={index}>
               <span>{country.label}</span>
-              <span>{ country.visa ? <i className="fa fa-check-circle" aria-hidden="true"></i> : <i class="fa fa-times-circle" aria-hidden="true"></i>}</span>
+              <span>
+                { country.visa ? 
+                  <i className="fa fa-check-circle" aria-hidden="true"></i> : 
+                  <i class="fa fa-times-circle" aria-hidden="true"></i>
+                }
+              </span>
             </Li>
 					)
 				})}
