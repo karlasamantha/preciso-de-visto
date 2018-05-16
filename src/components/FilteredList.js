@@ -30,7 +30,7 @@ class FilteredList extends Component {
     let updatedList = this.state.countries;
 
     updatedList = updatedList.filter((item) => {
-      return item.label.toLowerCase().search(event.target.value.toLowerCase()) !== -1;
+      return item.label.toLowerCase().includes(event.target.value.toLowerCase());
     })
     this.setState({filteredCountries: updatedList})
   }
