@@ -1,5 +1,5 @@
 # Preciso de Visto
-> WebApp para listar países que exigem visto brasileiro para turismo
+> WebApp para listar países que exigem visto de turismo para cidadãos brasileiros
 
 ## TODO
 - [ ] Traduzir nome dos países para pt-br
