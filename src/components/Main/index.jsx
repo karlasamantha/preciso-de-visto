@@ -7,7 +7,7 @@ const Main = () => (
       NextJS, Typescript, GraphQL e Styled Components
     </Style.Description>
     <Style.Illustration
-      src="/img/illustration.svg"
+      src="/img/world.svg"
       alt="Pessoa desenvolvedora de frente a tela com código"
     />
   </Style.Wrapper>
